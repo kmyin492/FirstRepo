@@ -1,10 +1,13 @@
 import { createRoot } from "react-dom/client";
+import { StrictMode } from "react";
 // import Pizza from "./Pizza";
 import Order from "./Order";
+import PizzaOfTheDay from "./PizzaOfTheDay";
 
 const App = () => {
   return (
-    <div>
+    <StrictMode>
+      <div>
       <h1 className="logo">Padre Gino's Pizza</h1>
       {/* <Pizza
         name="Pepperoni"
@@ -22,7 +25,9 @@ const App = () => {
         image={"/public/pizzas/big_meat.webp"}
       /> */}
       <Order/>
+      <PizzaOfTheDay/>
     </div>
+    </StrictMode>
   );
 };
 
